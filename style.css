@@ -156,7 +156,7 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image: url(./img/imarti.jpg);
+  background-image:url(./img/imarti.jpg);
   background-size: cover;
 }
 
@@ -164,7 +164,7 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image: url(./img/pav bhaji.jpg);
+  background-image:url(./img/pav bhaji.jpg);
   background-size: cover;
 }
 
