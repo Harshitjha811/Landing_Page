@@ -4,11 +4,14 @@
     text-transform:uppercase ;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, Cantarell, sans-serif;
-}
+  /* overflow-x: hidden; */
+  }
+
 
 #main{
-  height: 100vh;
-  position: relative;
+  /* width: 100vw; */
+  /* height: auto; */
+  /* position: relative; */
 }
 
 a{
@@ -17,13 +20,14 @@ a{
 }
 
 .navbar{
-    position: absolute;
-    right: 1%;
-    padding-top: 2%;
-    width: 70%;
-    height: 5%; 
+    /* position: absolute; */
+    /* right: 1%; */
+    padding-top: 2vh;
+    width: 100vw;
+    height: 5vh; 
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    /* background-color: blue; */
     align-items: centre;
     font-size: 20px;
     letter-spacing: 5px;
@@ -51,26 +55,34 @@ a{
 
 
  .background{
-    background-image:url(./img/img17.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 700px;
+    background-image:url(./img/landscape3.jfif);
+    background-size:contain;
+    background-repeat: round;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
     
 }
 
 
 #main-heading{
+
   position: absolute;
+  /* text-align: left; */
   right: 5%;
-  top: 20%;
-  font-size: 40px;
+  top: 50%;
+  font-size: 3em;
+  -webkit-text-stroke: 1px grey;
+  /* background-color: aqua; */
   letter-spacing: 3px;
   color: rgba(255, 123, 0, 0.776);
   text-shadow: 2px 2px 8px grey;
 }
 
 #main-heading>h6{
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bolder;
   letter-spacing: 3px;
   color: rgb(86, 85, 85);
@@ -85,33 +97,30 @@ a{
 
 
 .page2{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height:100vh;
-  width: 98vw;
-  position: relative;
-  overflow: hidden;
-}
-
-#layer1{
-  position: absolute;
+  /* overflow-x: hidden; */
+  padding:5%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  height: 40%;
-  width: 95%;
-  top: 6%;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width:calc( 100vw - 10%);
+  /* background-color: brown; */
+  gap: 1.5rem;
+  
 }
 
 #box{
-  width: 22%;
-  height: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh;
+  width: 25vw;
+  /* background-color: aqua; */
 }
 
 .more{
   align-items: center;
-  margin-left: 5.7rem;
+  /* margin-left: 5.7rem; */
   color: white;
   font-weight: bold;
   width: 5rem;
@@ -119,7 +128,7 @@ a{
   border-radius: 20px ;
   background: orange;
   border: none;
-  position: absolute;
+  /* position: absolute; */
   margin-top: -0.7rem;
   border: 5px solid white ;
   letter-spacing: 2px;
@@ -132,15 +141,6 @@ a{
  border: 2px solid orange;
 }
 
-#layer2{
-  position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 43%;
-  width: 95%;
-  top: 45%;
-}
 
 #box>h6{
   padding-bottom: 7px;
@@ -156,7 +156,7 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image:url(./img/imarti.jpg);
+  background-image: url(/img/dahi\ vada.jpg);
   background-size: cover;
 }
 
@@ -164,7 +164,7 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image:url(./img/pav.jpg);
+  background-image: url(/img/pav\ bhaji.jpg);
   background-size: cover;
 }
 
@@ -172,7 +172,7 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image:url(./img/makhani.jpg);
+  background-image: url(/img/dal\ makhani.jpg);
   background-size: cover;
 }
 
@@ -180,7 +180,7 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image:url(./img/dum.jpg);
+  background-image: url(/img/dum\ aloo.jpg);
   background-size: cover;
 }
 
@@ -188,7 +188,7 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image:url(./img/panner.jpg);
+  background-image: url(/img/mattar\ panner.jpg);
   background-size: cover;
 }
 
@@ -196,7 +196,7 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image:url(./img/rajma.jpg);
+  background-image: url(/img/rajma\ chawal.jpg);
   background-size: cover;
 }
 
@@ -205,7 +205,7 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image:url(./img/shahi.jpg);
+  background-image: url(/img/shahi\ paneer.jpg);
   background-size: cover;
 }
 
@@ -214,20 +214,34 @@ a{
   height: 80%;
   width: 100%;
   bottom: 0;
-  background-image:url(./img/vada.jpg);
+  background-image: url(/img/vada\ pav.jpg);
   background-size: cover;
 }
 
+#img9{
+  height: 80%;
+  width: 100%;
+  bottom: 0;
+  background-image: url(./img/kachori.jfif);
+  background-size: cover;
+}
+#box:hover{
+  transition: all 0.2s linear 0s;
+  transform: scale(0.9);
+}
+
 footer{
-  font-size: 12px;
-  letter-spacing: 1px;
-    position: absolute;
+    font-size: 12px;
+    letter-spacing: 1px;
+    /* position: absolute; */
+    bottom: 0;
     width: 100%;
-    background-color:rgb(208, 208, 208) ;
+    background-color:rgb(237, 224, 207) ;
     text-align: center;
     font-weight: 600;
     box-shadow: 2px 2px 2px 10px grey ;
     z-index: 10;
+    /* display: none; */
     
 }
 
@@ -257,4 +271,101 @@ footer{
   
   .fa-instagram{
     background: rgb(235, 140, 188);
+  }
+
+
+  @media only screen and (max-width: 600px) {
+   
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .navbar{
+      display: none;
+    }
+
+    .background{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url(./img/bg_potrait.jfif);
+    }
+
+    #main-heading{
+      all: unset;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    h1{
+      font-size: 4em;
+      line-height:80%;
+      color: rgba(255, 123, 0, 0.776);
+      text-shadow: 1px 1px 30px white;
+      text-align: center;
+      -webkit-text-stroke: 1px beige;
+    }
+
+    #main-heading>h6{
+      font-size: 0.8rem;
+      letter-spacing: normal;
+      text-align: center;
+      color: antiquewhite;
+    }
+
+    p{
+      display: none;
+    }
+
+    .page2{
+      all: unset;
+      display: flex;
+      align-items: center;
+      margin-top: 2vh;
+      height: auto;
+      width: 100vw;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 3vh;
+    }
+
+    #box{
+      all: unset;
+      align-items: center;
+      width: 90vw;
+      height: 30vh;
+    }
+
+    #box>h6{
+      text-align: center;
+      font-size: 1em;
+      letter-spacing: normal;
+    }
+
+
+    .more{
+      width: 33%;
+      margin-left:28%;
+      text-align: center;
+      align-items: center;
+    }
+
+    footer{
+      all: unset;
+      width: 100vw;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:2vh;
+      background-color: rgb(35, 57, 76);
+      
+    }
+
+
+
   }
